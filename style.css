@@ -1,8 +1,3 @@
-html, body{
-	padding: 0;
-	margin: 0;
-}
-
 header {
 	height: 80px;
 }
@@ -13,7 +8,6 @@ header {
 	max-height: 80px;
 	height: 100%;
 	float: left;
-	background-image: url('logo.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -148,6 +142,37 @@ ul li a {
 
 /*FOOTER*/
 
+.quote {
+	height: 340px;
+	background-color: #EEE;
+}
+
+.quote h5 {
+	padding-top: 20px;
+	font-family: 'Electrolize', sans-serif ;
+}
+
+.quote p {
+	font-family: 'Heebo', sans-serif;
+	color: #F42;
+	font-size: 60px;
+}
+
+.quote-share a {
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	border: 2px solid #ccc;
+	border-radius: 2px; 
+	text-decoration: none;
+	color: #AFAFAF;
+}
+
+.quote-share a:hover {
+	text-decoration: none;
+	color: #555;
+	border: 2px solid #999;
+}
+
 footer {
 	height: 250px;
 }
@@ -169,6 +194,7 @@ footer ul li { /*all list items affected*/
 	height: 40px;
 	border-radius: 50%;
 	margin-top: 50px;
+	border: 2px solid #333;
 }
 
 .social-link:hover {
