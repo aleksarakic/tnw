@@ -1,0 +1,220 @@
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	height: 80px;
+}
+
+.main-logo{
+	width: 100%;
+	max-width: 106px;
+	max-height: 80px;
+	height: 100%;
+	float: left;
+	background-image: url('logo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+ul li a {
+	text-decoration: none !important;
+}
+
+/*UPPER NAV*/
+
+.upper-nav {
+	height: 30px;
+	background-color: black;
+	
+}
+.left-upper-ul {
+	display: inline-block;
+	float: left;
+	padding-top: 5px;
+	margin-left: 8px !important;
+	padding-left: 8px !important;
+}
+
+.right-upper-ul {
+	display: inline-block;
+	float: right;
+	padding-top: 5px;
+	padding-right: 2px;
+
+}
+
+.left-upper-ul li, .right-upper-ul li {
+	display: inline;
+}
+
+.left-upper-ul li a, .right-upper-ul li a {
+	font-size: 13px;
+	color: #ccc !important;
+	margin-right: 7px;
+}
+
+.left-upper-ul li a:hover, .right-upper-ul li a:hover {
+	color: white !important;
+	cursor: pointer !important;
+}
+
+/*LOWER NAVIGATION*/
+.lower-nav {
+	height: 50px;
+	background-color: #f1f1f1;
+
+}
+
+.lower-left-ul {
+	float: left;
+	/*clear: right;*/
+	padding-left: 1px !important;
+	margin-left: 1px !important;
+}
+
+.lower-right-ul {
+	float: right;
+}
+
+.lower-left-ul li, .lower-right-ul li {
+	display: inline-block;
+	font-family: 'Electrolize', sans-serif;
+
+}
+
+.lower-nav a {
+	color: #AAA;
+	display: block;
+	max-height: 50px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-left:  7px;
+	padding-right: 7px;
+	margin-left: 5px;
+}
+
+.lower-nav a:hover {
+	color: black;
+	cursor: pointer;
+}
+
+.search-and-menu .fa {
+	padding: 15px 7px 15px 7px !important;
+	
+}
+
+#search-li {
+	border-left: 1px solid #ccc;
+}
+
+@media (min-width: 801px){
+	.search-and-menu{
+		display: none;
+	}
+}
+
+@media (max-width: 840px){
+	.lower-left-ul {
+		display: none;
+	}
+}
+
+@media (max-width: 1090px){
+	.lower-right-ul {
+		display: none;
+	}
+}
+
+
+@media (max-width: 800px){
+	.lower-nav, .right-upper-ul, .upper-nav ul li {
+		display: none;
+	}
+	.upper-nav {
+		background-color: #f1f1f1;
+		height: 100%;
+	}
+
+	.search-and-menu {
+		float: right;
+	}
+
+	#search, #menu {
+		border-left: 2px solid #CCC;
+	}
+} 
+
+/*FOOTER*/
+
+footer {
+	height: 250px;
+}
+
+.upper-footer {
+	background-color: #111;
+	height: 160px;
+}
+
+footer ul li { /*all list items affected*/
+	display: inline-block;
+}
+
+.social-link {
+	display: block;
+	background-color: #333;
+	color: white;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-top: 50px;
+}
+
+.social-link:hover {
+	border: 2px solid #333;
+	background-color: #111;
+	color: white;
+}
+
+.social-links-div .fa-lg { /*centriranje u krugu*/
+	margin-top: 11px;
+}
+
+.footer-links-menu {
+	margin-top: 20px;
+}
+
+.footer-links-menu a {
+	font-family: 'Electrolize', sans-serif;
+	color: #ccc !important;
+
+}
+.footer-links-menu a:hover {
+	color: white !important;
+}
+
+/* lower footer */
+
+.lower-footer {
+	background-color: #000;
+	height: 90px;
+}
+
+.copyright {
+  padding-top: 30px;
+  color: #ccc;
+}
+
+.footer-img {
+	height: 10px;
+}
+
+@media (max-width: 350px){
+	.social-links-div {
+		display: none;
+	}
+	.footer-links-menu {
+		padding-top: 50px;
+	}
+}
