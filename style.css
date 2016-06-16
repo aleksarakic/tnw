@@ -1,12 +1,8 @@
-header {
-	height: 80px;
-}
 
 .main-logo{
 	width: 100%;
 	max-width: 106px;
 	max-height: 80px;
-	height: 100%;
 	float: left;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -63,19 +59,24 @@ ul li a {
 
 .lower-left-ul {
 	float: left;
-	/*clear: right;*/
 	padding-left: 1px !important;
 	margin-left: 1px !important;
 }
 
 .lower-right-ul {
 	float: right;
+	
 }
 
 .lower-left-ul li, .lower-right-ul li {
 	display: inline-block;
 	font-family: 'Electrolize', sans-serif;
 
+}
+
+.fa:active {
+	text-decoration: none !important;
+	color: #ccc !important;
 }
 
 .lower-nav a {
@@ -96,7 +97,6 @@ ul li a {
 
 .search-and-menu .fa {
 	padding: 15px 7px 15px 7px !important;
-	
 }
 
 #search-li {
@@ -126,9 +126,15 @@ ul li a {
 	.lower-nav, .right-upper-ul, .upper-nav ul li {
 		display: none;
 	}
+
+
 	.upper-nav {
 		background-color: #f1f1f1;
-		height: 100%;
+		height: 45px;
+	}
+
+	.main-logo img {
+		height: 45px;
 	}
 
 	.search-and-menu {
@@ -140,14 +146,133 @@ ul li a {
 	}
 } 
 
+/* ARTICLES */
+body, html {
+	height: 98%;
+}
+
+.main {
+	height: 75%;
+}
+
+.cover {
+	background-color: #ccc;
+	width: 100%;
+	height: 100%;
+}
+
+.left-cover {
+	clear: left;
+	width: 50%;
+	display: inline-block;
+	position: relative;
+	border: 2px solid #CCC;
+	height: 100%;
+	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/06/sierra-796x385.jpg');
+	height: 100%;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+
+}
+.one, .two, .three, .four {
+	height: 100%;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+}
+
+.one {
+	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/06/sierra-796x385.jpg');
+}
+.two {
+	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/03/Pokemon-Go-1100x550.jpg');
+}
+.three{
+	background-image: url('http://pbs.twimg.com/media/Ck5nhpBVEAAhQA7.jpg');
+}
+.four{
+	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/06/android-n-dp4-easter-egg-2-796x597.png');
+}
+
+
+.right-cover {
+	width: 50%;
+	display: inline-block;
+	position: relative;
+	left: 0;
+	background-color: white;
+	height: 100%;
+	float: right;
+}
+
+.left-art {
+	height: 100%;
+	
+	padding: 3px;
+}
+
+.right-art {
+	height: 33%;
+	
+	padding: 3px;
+}
+
+
+@media (max-width: 800px){
+	.right-cover, .left-cover {
+		width: 100%;
+		height: 100%;
+	}
+	.right-cover {
+		height: 50%;
+	}
+	
+	.left-cover{
+		height: 50%;
+	}
+
+	.left-art {
+		width: 100%;
+	}
+
+	.right-art {
+		width: 33%;
+		display: inline-block;
+		position: relative;
+		height: 100%;
+	}
+}
+
+@media (max-width: 425px){
+	.left-art {
+		width: 100%;
+		height: 100%;
+	}
+	.right-art {
+		width: 100%;
+		height: 33%;
+	}
+
+	.left-cover {
+		height: 25%;
+	}
+
+	.right-cover {
+		height: 75%;
+	}
+	
+}
+
 /*FOOTER*/
 
 .quote {
 	height: 340px;
 	background-color: #EEE;
-}
+	}
 
 .quote h5 {
+	margin: 0 !important;
 	padding-top: 20px;
 	font-family: 'Electrolize', sans-serif ;
 }
@@ -228,8 +353,12 @@ footer ul li { /*all list items affected*/
 }
 
 .copyright {
-  padding-top: 30px;
   color: #ccc;
+  padding-top: 35px;
+}
+
+.fa-heart {
+	color: red;
 }
 
 .footer-img {
