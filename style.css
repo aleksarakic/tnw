@@ -150,7 +150,7 @@ ul li a {
 
 /* ARTICLES */
 body, html {
-	height: 98%;
+	height: 100%;
 }
 
 .main {
@@ -163,16 +163,13 @@ body, html {
 }
 
 
-
 .left-cover {
 	clear: left;
 	width: 50%;
 	display: inline-block;
 	position: relative;
-	border: 2px solid #CCC;
-	height: 100%;
-	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/06/sierra-796x385.jpg');
-	height: 100%;
+	border: 2px solid white;
+	height: 99%;
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position:center;
@@ -191,12 +188,15 @@ body, html {
 }
 .two {
 	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/03/Pokemon-Go-1100x550.jpg');
+	border: 2px solid white;
 }
 .three{
 	background-image: url('http://pbs.twimg.com/media/Ck5nhpBVEAAhQA7.jpg');
+	border: 2px solid white;
 }
 .four{
 	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/06/android-n-dp4-easter-egg-2-796x597.png');
+	border: 2px solid white;
 }
 
 
@@ -208,17 +208,16 @@ body, html {
 	background-color: white;
 	height: 100%;
 	float: right;
+	/*border: 2px solid white;*/
 }
 
 .left-art {
 	height: 100%;
-	
 	padding: 3px;
 }
 
 .right-art {
 	height: 33%;
-	
 	padding: 3px;
 }
 /* ARTICLE DETAILS */
@@ -237,18 +236,29 @@ body, html {
 
 .article-heading {
 	font-family: 'Heebo', sans-serif;
-	margin-top: 0 !important;
+	margin-top: 3px !important;
 	font-size: 2vw;
 }
 
 .article-details {
 	font-size: 1vw;
 	color: white;
+	margin-top: 3px !important;
 }
 
 @media (min-width: 1024px){
 	.one .article-details, .one .article-category {
 		font-size: 2vw;
+	}
+
+	.one .article-heading {
+		font-size: 4vw;
+	}
+}
+
+@media (max-width: 1309px){
+	.one .article-details, .one .article-category {
+		font-size: 1.5vw;
 	}
 
 	.one .article-heading {
@@ -321,11 +331,11 @@ body, html {
 
 	.article-details {
 		margin-bottom: 0;
-		font-size: 1.5svw;
+		font-size: 1.5vw;
 	}
 
 	.one .article-details, .one .article-category {
-		font-size: 1.5vw;
+		font-size: 2vw;
 	}
 
 	.one .article-heading {
@@ -353,7 +363,7 @@ body, html {
 
 	.article-category {
 		margin-bottom: 0;
-		font-size: 3vw;
+		font-size: 2.5vw;
 	}
 
 	.article-heading {
@@ -363,11 +373,11 @@ body, html {
 
 	.article-details {
 		margin-bottom: 0;
-		font-size: 3vw;
+		font-size: 2.5vw;
 	}
 
 	.one .article-details, .one .article-category {
-		font-size: 3vw;
+		font-size: 2.5vw;
 	}
 
 	.one .article-heading {
@@ -375,10 +385,17 @@ body, html {
 	}
 }
 
+.latest-news {
+	clear: left;
+}
+
 /*FOOTER*/
+.content {
+	height: 100%;
+}
 
 .quote {
-	height: 340px;
+	height: 50%;
 	background-color: #EEE;
 	}
 
@@ -391,7 +408,10 @@ body, html {
 .quote p {
 	font-family: 'Heebo', sans-serif;
 	color: #F42;
-	font-size: 60px;
+}
+
+.quote-share {
+	margin-bottom: 2%;
 }
 
 .quote-share a {
@@ -415,7 +435,7 @@ footer {
 
 .upper-footer {
 	background-color: #111;
-	height: 160px;
+	height: 30%;
 }
 
 footer ul li { /*all list items affected*/
@@ -444,7 +464,7 @@ footer ul li { /*all list items affected*/
 }
 
 .footer-links-menu {
-	margin-top: 20px;
+	margin: 2% 0 2% 0;
 }
 
 .footer-links-menu a {
@@ -460,12 +480,13 @@ footer ul li { /*all list items affected*/
 
 .lower-footer {
 	background-color: #000;
-	height: 90px;
+	height: 20%;
 }
 
 .copyright {
   color: #ccc;
-  padding-top: 35px;
+  
+  margin: 2% 0 2% 0;
 }
 
 .fa-heart {
@@ -476,11 +497,37 @@ footer ul li { /*all list items affected*/
 	height: 10px;
 }
 
+@media (min-width: 1024px){
+	.actuall-quote {
+		font-size: 5vw;
+	}
+
+	.quote-author {
+		font-size: 1.5vw;
+	}
+}
+@media (max-width: 1024px){
+	.actuall-quote {
+		font-size: 6vw;
+	}
+
+	.quote-author {
+		font-size: 2.5vw;
+	}
+}
+@media (max-width: 800px){
+
+}
+@media (max-width: 425px){
+	
+}
 @media (max-width: 350px){
 	.social-links-div {
 		display: none;
 	}
 	.footer-links-menu {
 		padding-top: 50px;
+		margin: 0;
 	}
+
 }
