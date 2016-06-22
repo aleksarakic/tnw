@@ -372,7 +372,7 @@ body, html {
 	}
 
 	.article-details {
-		margin-bottom: 0;
+		margin-bottom: 0 !important;
 		font-size: 2.5vw;
 	}
 
@@ -385,9 +385,92 @@ body, html {
 	}
 }
 
-.latest-news {
-	clear: left;
+
+/*LATEST NEWS*/
+.latest-news .container {
+	margin-left: 4% !important;
+	padding-left: 2% !important;
 }
+.ln-main-header {
+	margin-left: 4%;
+	padding-left: 2%;
+	font-family: 'Heebo', sans-serif;
+	color: #F42;
+}
+
+/*.ln-article-one, .ln-article-two, .ln-article-three, .ln-article-four {
+}*/
+
+.ln-img {
+	height: 130px;
+	width: 270px;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+}
+
+.ln-one .ln-img {
+	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/06/13323171_510248292495081_5145501698537711289_o-796x531.jpg');
+}
+.ln-two .ln-img {
+	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/04/patents-796x473.jpg');
+}
+.ln-three .ln-img {
+	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2016/05/Apple-App-Store-796x398.jpg');
+}
+.ln-four  .ln-img{
+	background-image: url('http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2015/06/shutterstock_200260748_Nintendo_Mario-1200x600.jpg');
+}
+
+.ln-heading {
+	font-family: 'Heebo', sans-serif;
+	color: black;
+}
+
+.ln-details {
+	font-family: 'Electrolize', sans-serif;
+}
+
+
+@media (min-width: 992px){
+	.ln-img {
+		width: 100%;
+		margin-right: 0 !important;
+	}
+}
+
+@media (max-width: 992px){
+	.ln-article {
+		width: 100%;
+	}
+
+	.ln-img {
+		height: 72px;
+		width: 72px;
+		display: inline-block;
+	}
+
+	.ln-heading-and-details {
+		display: inline-block;
+		vertical-align: top;
+		width: 70%;
+	}
+}
+
+@media (max-width: 320px){
+	.ln-heading {
+		margin-top: 0 !important;
+	}
+}
+
+@media (max-width: 300px){
+	.ln-heading-and-details {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+	}
+}
+
 
 /*FOOTER*/
 .content {
